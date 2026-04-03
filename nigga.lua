@@ -662,16 +662,16 @@
                 items[ "title" ] = library:create( "TextLabel" , {
                     FontFace = fonts.font;
                     BorderColor3 = rgb(0, 0, 0);
-                    Text = name;
                     Parent = items[ "side_frame" ];
                     Name = "\0";
-                    Text = string.format('<u>%s</u><font color="rgb(200, 200, 200)" size="16">%s</font>', cfg.name, cfg.suffix);
+                    Text = string.format('<u>%s</u>\n<font color="rgb(180, 180, 180)" size="14">%s</font>', cfg.name, cfg.suffix);
                     BackgroundTransparency = 1;
                     Size = dim2(1, 0, 0, 70);
                     TextColor3 = themes.preset.accent;
                     BorderSizePixel = 0;
                     RichText = true;
-                    TextSize = 30;
+                    TextWrapped = true; 
+                    TextSize = 26; 
                     BackgroundColor3 = rgb(255, 255, 255)
                 }); library:apply_theme(items[ "title" ], "accent", "TextColor3");
                 
