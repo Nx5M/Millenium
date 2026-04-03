@@ -567,8 +567,8 @@
             local cfg = { 
                 suffix = properties.suffix or properties.Suffix or "tech";
                 name = properties.name or properties.Name or "nebula";
-                expire = properties.expire or properties.Expire or "Lifetime"; -- MAKE SURE THIS IS HERE!
-                game_name = properties.gameInfo or properties.game_info or properties.GameInfo or "Milenium for Counter-Strike: Global Offensive";
+                footer = properties.footer or properties.Footer or "Default Footer";
+                game_name = properties.gameInfo or properties.game_info or properties.GameInfo or "Milenium";
                 size = properties.size or properties.Size or dim2(0, 700, 0, 565);
                 selected_tab;
                 items = {};
@@ -781,7 +781,7 @@
                     Name = "\0";
                     TextColor3 = themes.preset.accent;
                     BorderColor3 = rgb(0, 0, 0);
-                    Text = "";
+                    Text = cfg.footer; 
                     Size = dim2(1, 0, 0, 0);
                     Position = dim2(0, -10, 0.5, -1);
                     AnchorPoint = vec2(0, 0.5);
